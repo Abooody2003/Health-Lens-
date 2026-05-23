@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Node
+node_modules/
+
+# React Native / Expo
+.expo/
+dist/
+build/
+
+# Laravel
+/vendor/
+/storage/*.key
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

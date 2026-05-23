@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Laravel lives in /healthlens-backend
+    RewriteBase /healthlens-backend/
+
+    # Forward everything to /public
+    RewriteCond %{REQUEST_URI} !^/healthlens-backend/public/
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
